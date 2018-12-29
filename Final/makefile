@@ -6,3 +6,6 @@ sorthem.o: sorthem.asm asm_io.inc
 
 asm_io.o: asm_io.asm
 	nasm -f elf32 -d ELF_TYPE asm_io.asm
+
+clean:
+	rm *.o sorthem
